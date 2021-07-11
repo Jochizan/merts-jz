@@ -1,0 +1,28 @@
+@api = http://localhost:5200
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/60eb46e781e47c6ec969a646
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+  "url": "https://www.youtube.com/watch?v=W8AeOXa_FqU",
+  "title": "IA NOTEBOOK #4 | Programando Red Neuronal desde Cero! | Programando IA",
+  "description": "this is a dot csv video"
+}
+
+### 
+DELETE {{api}}/videos/60eb4e229748e97ad2d3da5c
+
+###
+PUT {{api}}/videos/60eb49d9bb530376c1d045ec
+Content-Type: application/json
+
+{
+  "title": "MERN STACK & TypeScript #2 Frontend",
+  "description": "This is a MERN Stack Frontend"
+}
