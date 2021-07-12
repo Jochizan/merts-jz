@@ -6,12 +6,12 @@ const router = Router();
 import * as videoCtrl from '../controllers/videos.controller'
 
 router
-  .get('/videos', videoCtrl.getVideos)
-  .post('/videos', videoCtrl.createVideo);
+  .get('/', videoCtrl.getVideos)
+  .post('/', videoCtrl.createVideo);
 
 router
-  .get('/videos/:id', videoCtrl.getVideo)
-  .delete('/videos/:id', videoCtrl.deleteVideo)
-  .put('/videos/:id', videoCtrl.updateVideo);
+  .get('/:id', videoCtrl.getVideo)
+  .delete('/:id', videoCtrl.deleteVideo)
+  .put('/:id', videoCtrl.updateVideo);
 
 export default router;
